@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:src="@mipmap/icon_dialog_close" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="454dp">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="50dp"
+            android:background="@color/white"
+            android:layout_height="50dp"
+            android:layout_above="@+id/ll"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_gray_shape4"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="90dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/推荐码"
+                android:textColor="@color/green"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="17665225840"
+                android:textColor="@color/green"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_white_shape3"
+        android:text="@string/立即分享"
+        android:textColor="@color/green2"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_white_line_shape"
+        android:text="@string/保存图片"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+</LinearLayout>

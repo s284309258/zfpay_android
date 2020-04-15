@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/iv_head_img"
+        android:layout_width="100dp"
+        android:scaleType="centerCrop"
+        android:layout_height="100dp"
+        android:src="@mipmap/icon_map_temp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/black_text_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/iv_head_img"
+        android:text="七天酒店(牛栏前店)" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/gray_text_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_marginTop="5dp"
+        android:text="60m | 龙华区-万众城步行街34号" />
+
+    <TextView
+        android:id="@+id/tv_vocation"
+        style="@style/white_text_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_location"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_purple_shape"
+        android:text="酒店旅游" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        style="@style/red_text_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignBottom="@+id/iv_head_img"
+        android:text="¥5.00" />
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/jia_jian_selector" />
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

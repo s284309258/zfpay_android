@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingTop="8dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提现到银行卡"
+        android:textColor="@color/text_color_main_black" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="8dp"
+        android:text="1970-01-01 0:00"
+        tools:text="2019-04-06 10:30" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="-0.00"
+        android:textColor="@color/text_color_money_red"
+        tools:text="-100.00" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_count"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/selecotr_lebal_yello_gray"
+        android:enabled="false"
+        android:paddingLeft="8dp"
+        android:paddingTop="1dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="1dp"
+        android:text="提现中..."
+        android:textColor="@color/selecotr_lebal_yello_gray"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_divider_bbbb" />
+
+</RelativeLayout>

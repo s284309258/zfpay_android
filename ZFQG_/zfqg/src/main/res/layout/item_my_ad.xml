@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/black_text_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2011年会计从业精选" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/gray_text_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text=".7月7日-9月8日每周二、周五20:30-21:30直播教学，500教师精心教学" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/gray_text_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总赏金：80.00金币" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/gray_text_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2019-4-15 12:00" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>

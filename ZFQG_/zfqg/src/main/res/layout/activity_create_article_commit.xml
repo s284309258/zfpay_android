@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_transparent_tool_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/封面图片" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="66dp"
+                android:layout_height="66dp">
+                <TextView
+                    android:id="@+id/tv_image_cover"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_add_picture" />
+
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/color_divider_bbbb"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_height="76dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/文章标题" />
+            <!--<TextView
+                android:maxLines="2"
+                android:id="@+id/tv_title"
+                android:textColor="@color/text_color_main_black"
+                android:lineSpacingExtra="4dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:text="被生活退哭：成年人的奔油只要一目间！一宜面情绪"
+                android:layout_height="match_parent" />-->
+            <EditText
+                android:id="@+id/tv_title"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"
+                android:hint="请输入文章标题"
+                android:maxLines="2"
+                android:textColor="@color/text_color_main_black"
+                android:lineSpacingExtra="4dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/color_divider_bbbb"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_height="76dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/文章简介" />
+            <EditText
+                android:id="@+id/edit_brief_intro"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"
+                android:hint="@string/请输入30字以内的简介"
+                android:maxLines="2"
+                android:textColor="@color/text_color_main_black"
+                android:lineSpacingExtra="4dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/color_divider_bbbb"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:id="@+id/ll_select_type"
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_height="76dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/文章类型" />
+            <TextView
+                android:id="@+id/tv_select_type"
+                android:textSize="14sp"
+                android:hint="@string/请选择文章类型"
+                android:text="互联网行业"
+                android:drawableRight="@mipmap/icon_my_arrows"
+                android:maxLines="2"
+                android:textColor="@color/text_color_main_black"
+                android:lineSpacingExtra="4dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_commit"
+            android:layout_marginTop="30dp"
+            android:paddingTop="10dp"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_shape_yello_btn"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/提交"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

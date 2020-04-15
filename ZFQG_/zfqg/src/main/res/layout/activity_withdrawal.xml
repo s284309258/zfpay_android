@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_tool_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bank"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_bank_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/icon_bank" />
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/iv"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/选择银行卡"
+            android:layout_alignTop="@+id/iv_bank_logo"
+            android:layout_toRightOf="@+id/iv_bank_logo"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_bank_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_bank_logo"
+            android:layout_toRightOf="@+id/iv_bank_logo"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrows" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/请输入提现金额"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/tv_usable_count"
+            android:background="@color/transparent"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_usable_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_number"
+            android:layout_alignParentRight="true"
+            android:text="@string/可提现金额"
+            android:textColor="@color/green"
+            android:textSize="13sp" />
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_below="@+id/et_number"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_number"
+            android:layout_marginTop="26dp"
+            android:text="@string/总手续费2"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_service_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_number"
+            android:layout_marginTop="26dp"
+            android:layout_toRightOf="@+id/tv"
+            android:text="￥0.00"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_service_count"
+            android:layout_marginTop="15dp"
+            android:text="@string/到账金额2"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_real_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_service_count"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tv2"
+            android:text="￥0.00"
+            android:textColor="@color/red"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_number"
+            android:layout_marginTop="26dp"
+            android:layout_toLeftOf="@+id/tv_deduct_count"
+            android:text="@string/考核未达标扣除2"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_deduct_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/et_number"
+            android:layout_marginTop="26dp"
+            android:text="￥0.00"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_real_count"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_gray_shape"
+            android:lineSpacingExtra="5dp"
+            android:padding="15dp"
+            android:text="@string/提现温馨提示"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_btn_shape"
+        android:text="@string/申请提现"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_tool_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/当前绑定手机号2"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/black_text_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/rl"
+            android:layout_toRightOf="@+id/tv"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/图形验证码"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <com.lckj.lckjlib.widgets.ClearEditText
+            android:id="@+id/et_iv_vcode"
+            style="@style/black_text_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/iv_vcode"
+            android:layout_toRightOf="@+id/tv2"
+            android:background="@android:color/transparent"
+            android:hint="@string/请输入图形验证码"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:id="@+id/iv_vcode"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="29dp"
+            android:paddingLeft="10dp" />
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/短信验证码"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <com.lckj.lckjlib.widgets.ClearEditText
+            android:id="@+id/et_vcode"
+            style="@style/black_text_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/btn_send_vcode"
+            android:layout_toRightOf="@+id/tv3"
+            android:background="@android:color/transparent"
+            android:hint="@string/请输入短信验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/btn_send_vcode"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_green_line_shape2"
+            android:gravity="center"
+            android:text="@string/立即获取"
+            android:textColor="@color/green"
+            android:textSize="12sp" />
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/新登录密码"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <com.lckj.lckjlib.widgets.ClearEditText
+            android:id="@+id/et_pw"
+            style="@style/black_text_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/iv_eye"
+            android:layout_toRightOf="@+id/tv4"
+            android:background="@android:color/transparent"
+            android:hint="@string/六十六位数字字母组合"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:id="@+id/iv_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/eye_selecotr" />
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/确认密码"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <com.lckj.lckjlib.widgets.ClearEditText
+            android:id="@+id/et_pw_reg"
+            style="@style/black_text_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/iv_eye2"
+            android:layout_toRightOf="@+id/tv5"
+            android:background="@android:color/transparent"
+            android:hint="@string/确认密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:id="@+id/iv_eye2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/eye_selecotr" />
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_btn_shape"
+        android:text="@string/确认修改"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+
+</LinearLayout>

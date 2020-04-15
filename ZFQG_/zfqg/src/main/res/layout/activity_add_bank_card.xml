@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/持卡人姓名"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@color/transparent"
+            android:hint="@string/请输入持卡人姓名"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/开户行"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.lckj.lckjlib.widgets.ClearEditText
+            android:id="@+id/et_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@color/transparent"
+            android:hint="@string/请输入开户行"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/xx"
+        style="@style/horizontal_line"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/银行代码"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.lckj.lckjlib.widgets.ClearEditText
+            android:id="@+id/et_bank_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@color/transparent"
+            android:hint="@string/请输入银行代码"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/银行卡号"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.lckj.lckjlib.widgets.ClearEditText
+            android:id="@+id/et_bank_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@color/transparent"
+            android:hint="@string/请输入银行卡号"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/上传银行卡正反面照"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_marginTop="8dp"
+            android:text="@string/请保持图片清晰可见"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_add_front"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/tv2"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/bg_photo_add"
+            android:drawableTop="@mipmap/icon_photo_add"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="@string/银行卡正面照"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_front"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/tv2"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:id="@+id/tv_add_back"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/tv2"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/iv_front"
+            android:background="@mipmap/bg_photo_add"
+            android:drawableTop="@mipmap/icon_photo_add"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="@string/银行卡反面照"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/tv2"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/iv_front" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_selector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/设为默认"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/on_off_selector" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:text="提现到银行卡"
+        android:textColor="@color/text_color_main_black"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        tools:text="2019-04-06 10:30"
+        android:text="1970-01-01 0:00"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tv_name"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        tools:text="+100.00"
+        android:text="+0.00"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tv_time"
+        android:background="@color/color_divider_bbbb"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+</RelativeLayout>

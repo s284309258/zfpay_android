@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+apply from: "../conf.gradle"
+
+android {
+    compileSdkVersion android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion android.minSdkVersion
+        targetSdkVersion android.targetSdkVersion
+        versionCode android.versionCode
+        versionName android.versionName
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation "com.android.support:appcompat-v7:${android.VSupportSdk}"
+    //noinspection GradleCompatible
+    implementation "com.android.support:recyclerview-v7:${android.VSupportSdk}"
+    implementation "io.reactivex.rxjava2:rxjava:${android.rxjava}"
+    implementation "io.reactivex.rxjava2:rxandroid:${android.rxandroid}"
+    implementation "com.github.bumptech.glide:glide:${android.glide}"
+//    implementation project(':ucrop')
+    implementation(name: 'ucrop-release-1.0.7', ext: 'aar')
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_head_img"
+        android:layout_toLeftOf="@+id/iv_head_img"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="2"
+        android:text="上海地铁站现诗歌POS机，一元买两首贫困山区儿童的诗歌..."
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_head_img"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_head_img"
+        android:text="2019.08.12 12:00"
+        android:textColor="@color/gray"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_head_img"
+        android:layout_toLeftOf="@+id/iv_head_img"
+        android:drawableLeft="@mipmap/icon_liulan"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="200"
+        android:textColor="@color/gray"
+        android:textSize="13sp" />
+
+</RelativeLayout>

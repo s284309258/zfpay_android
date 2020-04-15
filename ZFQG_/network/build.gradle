@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    /*dexOptions {
+        additionalParameters = [//dex参数详见 dx --help
+                                '--multi-dex',//多分包
+                                '--set-max-idx-number=60000',//每个包内方法数上限
+                                '--main-dex-list='+*//*projectDir*//*'../multiDexKeep.txt',//打包进主classes.dex的文件列表
+                                '--minimal-main-dex'//使上一句生效
+        ]
+    }*/
+}
+
+
+def Dagger2_Version = '2.0.2'
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    //    api 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    //    api 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    //    provided "javax.annotation:jsr250-api:$var.annotationVersion"
+    compileOnly rootProject.ext.dependencies["jsr"]
+    annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
+    //    implementation "com.google.dagger:dagger-android-support:$var.daggerVersion"
+    api rootProject.ext.dependencies["dagger-android-support"]
+    //    api 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+    //    api 'io.reactivex:rxandroid:0.24.0'
+    api rootProject.ext.dependencies["rxjava"]
+    api rootProject.ext.dependencies["rxandroid"]
+    //    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    //    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //    api 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    //    api 'com.squareup.okhttp3:okhttp:3.8.1'
+    //    api 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    api rootProject.ext.dependencies["retrofit"]
+    api rootProject.ext.dependencies["retrofit-converter-gson"]
+    api rootProject.ext.dependencies["retrofit-adapter-rxjava"]
+    api rootProject.ext.dependencies["okhttp3"]
+    api rootProject.ext.dependencies["okhttp3-logging-interceptor"]
+    api 'com.qiniu:qiniu-android-sdk:7.3.+'
+    implementation 'top.zibin:Luban:1.1.8'
+    api rootProject.ext.dependencies["multidex"]
+    implementation project(':utilslib')
+}

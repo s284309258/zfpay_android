@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lckjLib</string>
+    <string name="back">返回</string>
+    <string name="send_vcode">立即获取</string>
+</resources>

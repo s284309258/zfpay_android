@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/bg_white_shape"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/订单号2"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_order_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv"
+        android:text="20190810151416335458587"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="审核中"
+        android:textColor="@color/red"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/xx"
+        style="@style/horizontal_line"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xx"
+        android:layout_marginTop="10dp"
+        android:text="@string/活动类型"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_order_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv2"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv2"
+        android:text="你敢激活我敢高返"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="10dp"
+        android:text="@string/奖励类型"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_award_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv3"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv3"
+        android:text="@string/库存台交易额达到万返现元"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="10dp"
+        android:text="@string/申请时间"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv4"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv4"
+        android:text="2019/08/06 13:46:55"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>

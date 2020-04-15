@@ -1,0 +1,26 @@
+apply plugin: 'com.mob.sdk'
+MobSDK {
+    appKey "2c559023f6f12"
+    appSecret "4902e828cb5a8853cae42b0c52d77727"
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            WechatMoments {
+                appId "wxc56ded44f31fb7e7"
+                appSecret "8dffa2c0f33fe4a28702bdb1c2510547"
+            }
+            Wechat {
+                id 4
+                sortId 4
+                appId "wxc56ded44f31fb7e7"
+                appSecret "8dffa2c0f33fe4a28702bdb1c2510547"
+                withShareTicket true
+                miniprogramType 0
+                bypassApproval false
+                enable true
+            }
+        }
+    }
+
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@mipmap/icon_green"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/选择类型"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_mpos"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/green_selector"
+            android:gravity="center"
+            android:text="MPOS"
+            android:textColor="@color/white_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_pos"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/green_selector"
+            android:gravity="center"
+            android:text="@string/传统POS"
+            android:textColor="@color/white_black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@mipmap/icon_green"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/SN码"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <com.lckj.lckjlib.widgets.ClearEditText
+        android:id="@+id/et_sn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/transparent"
+        android:hint="@string/请输入要解绑的SN码"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/horizontal_line"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@mipmap/icon_green"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/商户号可不填"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <com.lckj.lckjlib.widgets.ClearEditText
+        android:id="@+id/et_store"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/transparent"
+        android:hint="@string/请输入商户号"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/horizontal_line"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_btn_shape"
+        android:text="@string/提交申请"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_record"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_green_line_shape3"
+        android:text="@string/申请记录"
+        android:textColor="@color/green"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:background="@color/white"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/iv_head_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_head_img"
+        android:layout_marginTop="15dp"
+        android:text="高返现活动"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="10dp"
+        android:text="2019.08.12 12:00"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_join"
+        android:layout_width="70dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/iv_head_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_green_shape4"
+        android:gravity="center"
+        android:text="@string/立即参与"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

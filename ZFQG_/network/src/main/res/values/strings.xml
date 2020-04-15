@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pwd_err_2">交易密码长度必须为6位</string>
+    <string name="weishiming">未实名认证</string>
+    <string name="shimingshenhe">实名认证审核中</string>
+    <string name="shimingchenggong">实名认证成功</string>
+    <string name="shimingshibai">实名认证失败</string>
+    <string name="save_succeed">保存成功</string>
+    <string name="save_error">保存失败</string>
+    <string name="pwd_err_1">登录密码（6-16位数字、字母组合）</string>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:srlEnablePreviewInEditMode="true"
+    app:srlPrimaryColor="@color/white">
+
+    <com.scwang.smartrefresh.header.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:fillViewport="true"
+        android:orientation="vertical">
+        <!--<LinearLayout
+            android:orientation="horizontal"
+            android:paddingRight="5dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:background="@color/yellow"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:hint="搜索你感兴趣的内容"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:drawablePadding="4dp"
+                android:drawableLeft="@mipmap/icon_search"
+                android:layout_width="wrap_content"
+                android:background="@drawable/shape_white_4"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_hezuo"
+                android:paddingLeft="10dp"
+                android:drawableTop="@mipmap/icon_hezuo"
+                android:layout_width="wrap_content"
+                android:text="合作"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:srlEnablePreviewInEditMode="false"
+            app:srlPrimaryColor="@color/white">
+            &lt;!&ndash;app:srlPrimaryColor="@color/white" srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色&ndash;&gt;
+            &lt;!&ndash;srlEnablePreviewInEditMode 可以开启和关闭预览功能&ndash;&gt;
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:image_scale_type="fit_xy" />
+
+            <LinearLayout
+                android:id="@+id/ll_menu"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/banner"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_white_shape"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    style="@style/black_text_16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_new_gold"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/share_earn_gold" />
+
+                <TextView
+                    android:id="@+id/tv_data"
+                    style="@style/black_text_16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_new_data"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/big_data_plaze" />
+
+                <TextView
+                    android:id="@+id/tv_store"
+                    style="@style/black_text_16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_new_store"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/store" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_menu"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_white_shape">
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/black_text_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/look_news_earn_gold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_look"
+                    style="@style/gray_text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/icon_my_arrows"
+                    android:drawablePadding="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/look_all" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="15dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

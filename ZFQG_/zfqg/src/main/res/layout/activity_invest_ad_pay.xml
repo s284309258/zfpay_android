@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_transparent_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/black_text_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/总金额" />
+
+        <TextView
+            style="@style/yellow_text_18"
+            android:text="0.00"
+            android:id="@+id/tv_sum_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_gold"
+            style="@style/gray_text_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="@string/invest_ad_pay_remaining" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cp_grid_item_bg"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/black_text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/单次分享金额" />
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/black_text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/金币" />
+
+            <com.lckj.lckjlib.widgets.ClearEditText
+                android:id="@+id/et_money"
+                style="@style/black_text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:maxLength="6"
+                android:layout_toLeftOf="@+id/tv"
+                android:layout_toRightOf="@+id/tv2"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:hint="@string/zero"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/orange_text_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/invest_ad_pay_hint"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/black_text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/分享次数" />
+
+            <com.lckj.lckjlib.widgets.ClearEditText
+                android:id="@+id/et_share_count"
+                style="@style/black_text_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv3"
+                android:background="@android:color/transparent"
+                android:hint="@string/et_share_count"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                style="@style/horizontal_line"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_selecotr_area"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/black_text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/分享次数" />
+
+            <TextView
+                android:id="@+id/tv_invest_area"
+                style="@style/black_text_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv4"
+                android:hint="@string/selector_invest_area"
+                android:paddingLeft="15dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_my_arrows" />
+
+            <TextView
+                style="@style/horizontal_line"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_invest"
+        style="@style/btn_yellow"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/lijitoufang" />
+
+</LinearLayout>

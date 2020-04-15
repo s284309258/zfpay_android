@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_tool_bar" />
+
+    <View
+        style="@style/horizontal_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_pos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/传统POS商户"
+                android:textColor="@color/green_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/xx"
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/green2"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mpos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_mpos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/MPOS商户"
+                android:textColor="@color/green_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/xx2"
+                android:layout_width="70dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/green2"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_epos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_epos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EPOS商户"
+                android:textColor="@color/green_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/xx3"
+                android:layout_width="70dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/green2"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

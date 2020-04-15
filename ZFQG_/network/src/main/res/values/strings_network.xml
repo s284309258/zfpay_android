@@ -1,0 +1,4 @@
+<resources>
+    <string name="msg_service_error">网络异常，请重试~</string>
+    <string name="toast_phone_error">请输入正确的手机号码</string>
+</resources>

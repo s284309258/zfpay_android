@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.lckj.utilslib.view.RatioImage
+        android:id="@+id/riv_img"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+    <!--<com.lckj.lckjlib.view.CircleImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_marginRight="@dimen/dp_size_15"-->
+        <!--app:civ_border_color="@color/white"-->
+        <!--app:civ_border_width="2dp"-->
+        <!--tools:src="@mipmap/avatar_default_40" />-->
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@mipmap/icon_delete_point"
+        android:visibility="visible" />
+</RelativeLayout>

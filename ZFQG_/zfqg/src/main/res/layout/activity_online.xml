@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableLeft="@mipmap/black_back_icon"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_list"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:background="@drawable/grren_left_selector"
+                android:gravity="center"
+                android:text="@string/活动列表"
+                android:textColor="@color/white_green"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_order"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:background="@drawable/grren_right_selector"
+                android:gravity="center"
+                android:text="@string/活动订单"
+                android:textColor="@color/white_green"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_record"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="16dp"
+            android:text="@string/奖励记录"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <View style="@style/horizontal_line"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <com.lckj.zfqg.widget.MyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

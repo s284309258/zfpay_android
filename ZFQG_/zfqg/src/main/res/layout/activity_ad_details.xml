@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false"
+        android:layout_above="@+id/rl_bottom_menu">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <com.lckj.jycm.widget.ObservableScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_bottom_menu"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="266dp"
+                    android:background="@color/blue"
+                    app:indicator_margin="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/black_text_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/iv_head_img"
+                        android:text="七天酒店(牛栏前店)" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/gray_text_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_alignLeft="@+id/tv_name"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/tv_distance"
+                        android:text="龙华区-万众城步行街34号" />
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        style="@style/red_text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_location"
+                        android:layout_alignLeft="@+id/tv_name"
+                        android:layout_marginTop="10dp"
+                        android:text="¥5.00" />
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        style="@style/white_text_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_blue_shape"
+                        android:drawableLeft="@mipmap/icon_distance"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:maxWidth="100dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="2dp"
+                        android:singleLine="true"
+                        android:text="310m" />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        style="@style/gray_text_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_ad_oval"
+                        android:drawablePadding="10dp"
+                        android:text="@string/suoshuhangye" />
+
+                    <TextView
+                        android:id="@+id/tv_vocation"
+                        style="@style/black_text_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/酒店旅业" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        style="@style/gray_text_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_ad_oval"
+                        android:drawablePadding="10dp"
+                        android:text="@string/pingmuchicun" />
+
+                    <TextView
+                        android:id="@+id/tv_size"
+                        style="@style/black_text_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="1080x1920" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        style="@style/gray_text_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_ad_oval"
+                        android:drawablePadding="10dp"
+                        android:text="@string/toufangzhouqi" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        style="@style/black_text_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/_7天" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        style="@style/gray_text_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_ad_oval"
+                        android:drawablePadding="10dp"
+                        android:text="@string/toufangshichang" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/black_text_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="15秒" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_details"
+                        style="@style/white_yellow_text_18"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_yellow_selector"
+                        android:gravity="center"
+                        android:text="@string/xiangqingjieshao" />
+
+                    <TextView
+                        android:id="@+id/tv_map"
+                        style="@style/white_yellow_text_18"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_yellow_selector2"
+                        android:gravity="center"
+                        android:text="@string/map" />
+                </LinearLayout>
+                <com.lckj.lckjlib.map.MapFrameLayout
+                    android:id="@+id/map_view_frame"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.amap.api.maps.MapView
+                        android:id="@+id/map_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="350dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp" />
+                </com.lckj.lckjlib.map.MapFrameLayout>
+            </LinearLayout>
+
+
+        </com.lckj.jycm.widget.ObservableScrollView>
+
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="32dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:src="@mipmap/white_back_icon" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_menu"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View style="@style/horizontal_line" />
+
+        <TextView
+            android:id="@+id/tv_shopping_trolley"
+            style="@style/gray_text_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@mipmap/icon_tfjh"
+            android:text="@string/toufangjihua" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            style="@style/white_text_14"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/tv_shopping_trolley"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_red_oval_shape"
+            android:gravity="center"
+            android:text="3"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_investment"
+            style="@style/btn_yellow"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_half_yellow_shape"
+            android:text="@string/lijitoufang" />
+
+        <Button
+            android:id="@+id/btn_add_plan"
+            style="@style/btn_yellow"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_investment"
+            android:background="@drawable/bg_half_yellow_shape2"
+            android:text="@string/jiarujihua" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

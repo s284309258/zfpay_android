@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tabs">
+        <item>资讯</item>
+        <item>设备地图</item>
+        <item>任务</item>
+        <item>个人中心</item>
+    </string-array>
+    <string-array name="article_types">
+        <item>美食</item>
+        <item>体育</item>
+        <item>生活</item>
+        <item>热门</item>
+        <item>娱乐</item>
+        <item>财经</item>
+        <item>养生</item>
+        <item>科技</item>
+        <item>育儿</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="industrys">
+        <item>餐饮服务</item>
+        <item>娱乐休闲</item>
+        <item>酒店旅行</item>
+        <item>商超零售</item>
+        <item>汽车服务</item>
+        <item>医疗美容</item>
+        <item>楼盘物业</item>
+        <item>家装建材</item>
+        <item>教育培训</item>
+        <item>公共服务</item>
+        <item>其它行业</item>
+    </string-array>
+    <string-array name="distance_str">
+        <item>2公里</item>
+        <item>5公里</item>
+        <item>10公里</item>
+        <item>20公里</item>
+        <item>50公里</item>
+    </string-array>
+    <integer-array name="distance">
+        <item>500</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>50000</item>
+    </integer-array>
+    <integer-array name="share">
+        <item>1</item>
+        <item>4</item>
+    </integer-array>
+</resources>

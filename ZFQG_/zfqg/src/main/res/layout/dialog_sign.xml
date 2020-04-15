@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@drawable/bg_white_shape"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_coin"
+        style="@style/yellow_text_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_my_jinbi"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        style="@style/yellow_text_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_coin"
+        android:layout_alignBottom="@+id/tv_coin"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_coin"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        style="@style/yellow_text_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_coin"
+        android:layout_marginTop="15dp"
+        android:text="@string/qiandaochenggong" />
+
+</RelativeLayout>

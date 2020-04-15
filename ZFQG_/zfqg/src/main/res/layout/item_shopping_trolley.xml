@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@drawable/bg_white_shape"
+    android:paddingLeft="15dp"
+    android:layout_marginBottom="10dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="20dp"
+        android:checked="false"
+        android:layout_height="20dp"
+        android:button="@null"
+        android:background="@drawable/selector_icon_tick_checked"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:id="@+id/iv_head_img"
+        android:layout_width="100dp"
+        android:background="@color/yellow"
+        android:layout_height="100dp"
+        android:src="@mipmap/icon_map_temp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/checkbox" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/black_text_20"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_head_img"
+        android:text="七天酒店(牛栏前店)" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/gray_text_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="60m | 龙华区-万众城步行街34号" />
+
+    <TextView
+        android:id="@+id/tv_vocation"
+        style="@style/white_text_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_location"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_purple_shape"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="酒店旅游" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        style="@style/red_text_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignBottom="@+id/iv_head_img"
+        android:text="¥5.00" />
+
+</RelativeLayout>
